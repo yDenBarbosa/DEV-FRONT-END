@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* rest layout*/
+        /* '*' seletor global*/
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 100vw; /*vw = viewport, no caso, 100% da tela */
+            height: 100vw;
+
+            display: flex;
+            /*justify-content: space-between; /*espaçamento igual entre os elementos*/
+            /*justify-content: space-around; /*espaçamento igual entre os elementos e algum espaço nas laterais*/
+            justify-content: space-evenly; /*espaçamento igual entre os elementos e nas laterais*/
+            flex-direction: column; /*coloca o elemento em vertical/y/coluna. obs com o display: flex;*/
+            /*align-items: start; /*posiona o elemento no começo da tela*/
+            align-items: center; /*posiciona o elemento no centro da tela*/
+            /*align-items: end; /*posiciona o elemento no fim da tela*/
+            /*flex-direction: column-reverse; /*posiciona o elemento revertendo ele*/
+            /*gap: 100px; /*define o espaçamento entre linhas e colunas em layouts*/
+
+            border: 1px solid black;
+            background-color: aqua;
+        }
+
+        .circle{
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            background-color: blueviolet;
+        }
+
+        .yellow{
+            background-color: yellow;
+        }
+
+        .blue{
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+    <div class="circle yellow"></div>
+    <div class="circle blue"></div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+.box{
+    height: 100px; /*altura*/
+    width: 100px; /*largura*/
+    background-color: chartreuse; /*cor de fundo de um elemento*/
+    padding: 100px; /*espaçamento interno*/
+    border: 50px solid rebeccapurple; /*borda*/
+    margin: 100px; /*espaço externo ao redor de um elemento*/
+    margin-top: 5px; /*margem na parte de cima*/
+    margin-left: 15px; /*margem na esquerda*/
+    margin-right: 78px; /*margem na direita*/
+    margin-bottom: 90x; /*margem na parte de baixo*/
+    margin: 100px 10px 20px 900px; /*todos de uma vez*/
+ }
