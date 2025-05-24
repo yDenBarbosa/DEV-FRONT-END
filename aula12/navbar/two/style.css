@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: 0;
+    text-decoration: 0;
+    border: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+
+header{
+    width: 100vw;
+    height: 72px;
+    padding: 16px 64px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > img{
+    width: 84px;
+    height: 36px;
+}
+
+header > nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+nav > button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+header > button{
+    border: 1px solid black;
+    padding: 8px 20px;
+    color: #FFFF;
+    background-color: #000000;
+}
