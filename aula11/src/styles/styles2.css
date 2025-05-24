@@ -1,0 +1,14 @@
+.container{
+    display: flex;
+    /* align-items: center;  VERTICAL = coloca o objeto no centro  */
+    /* align-items: flex-end; VERTICAL = coloca o objeto no final/fim/em baixo */
+    /* align-items: flex-start; VERTICAL = coloca o objeto no começo/topo/em cima */
+    /* justify-content: center; HORIZONTAL = coloca o objeto no centro */
+    /* justify-content: flex-end; HORIZONTAL = coloca o objeto no final/fim/direita da tela */
+    /* justify-content: flex-start; HORIZONTAL = coloca o objeto no começo/topo/na esquerda */
+    /* justify-content: space-evenly; HORIZONTAL = espaço iguais entre e ao redor dos objetos */
+    /* justify-content: space-around; HORIZONTAL = espaço iguais dentro dos elementos e algum fora deles */
+    justify-content: space-between; /* HORIZONTAL = espaço igual entre os elementos */
+    background-color: aqua;
+    height: 500px;
+}

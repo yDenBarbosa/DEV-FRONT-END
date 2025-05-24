@@ -1,0 +1,75 @@
+/* .red1{
+    background-color: rgb(226, 134, 134);
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+.red3{
+    background-color: rgb(144, 36, 36);
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+.red3{
+    background-color: rgb(104, 51, 51);
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+.red4{
+    background-color: rgb(124, 4, 4);
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+.red5{
+    background-color: rgb(224, 22, 22);
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+.red6{
+    background-color: rgb(94, 38, 38);
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+.red7{
+    background-color: rgb(153, 114, 114);
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+.red8{
+    background-color: rgb(177, 10, 10);
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+.red9{
+    background-color: rgb(88, 2, 2);
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+.red10{
+    background-color: rgb(57, 2, 2);
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+} */
+
+@import url(global.css);
+
+p{
+    font-size: large;/*var(--font-padrao); */
+    /* color: var(--cor-primaria); */
+}
+
+.i2{
+    background-color: var(--cor-primaria);
+}
+
+.i3{
+    color: var(--cor-primaria);
+}

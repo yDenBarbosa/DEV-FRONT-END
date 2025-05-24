@@ -1,0 +1,20 @@
+@import url(./globalAtiv.css);
+
+.b1{
+    font-size: var(--font-padrao);
+    background-color: var(--cor-primaria);
+    width: 100px;
+    height: 50px;
+}
+/* .b2{
+
+}
+.b3{
+
+}
+.b4{
+
+}
+.b5{
+
+} */
