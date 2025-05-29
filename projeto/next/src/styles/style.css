@@ -1,0 +1,87 @@
+@import url(./global.css);
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-neutral-silver);
+    padding: 22px 0;
+}
+
+.nav-header > ul{
+    display: flex;
+    list-style: none; /*tira os pontinhos da lista*/
+    gap: 50px;
+}
+
+.nav-header ul > li > a{
+    text-decoration: none;
+    color: #18191f;
+}
+
+.active{
+    font-weight: 600;
+}
+
+.btn-header{
+    display: flex;
+    gap: 14px;
+}
+
+.btn-login{
+    background-color: var(--color-neutral-silver);
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn-login > a{
+    color: var(--color-primary);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.btn-signUp{
+    background-color: var(--color-primary);
+    border-radius: 6px;
+    padding: 10px 20px;
+}
+
+.btn-signUp > a{
+    color: var(--color-neutral-white);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 104px;
+    padding: 96px 0;
+    background-color: var(--color-neutral-silver);
+}
+
+.content-lessons{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 657px;
+}
+
+.content-lessons > h1{
+    font-size: 64px;
+    color: var(--color-neutral-dGrey);
+}
+.content-lessons > h1 > span{
+    color: var(--color-primary);
+}
+
+.content-lessons > p{
+    color: var(--color-neutral-grey);
+}
+
+.content-lessons > button{
+    width: 128px;
+}
