@@ -85,3 +85,35 @@ main{
 .content-lessons > button{
     width: 128px;
 }
+
+section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 144px;
+    gap: 16px;
+}
+
+.our-clients-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.our-clients-content > h2{
+    font-size: 36px;
+    color: var(--color-neutral-dGrey);
+}
+
+.our-clients-content > p{
+    font-size: 16px;
+    color: var(--color-neutral-dGrey);
+}
+
+.our-clients-logo{
+    display: flex;
+    justify-content: center;
+    gap: 136px;
+    padding: 25px 0;
+}
