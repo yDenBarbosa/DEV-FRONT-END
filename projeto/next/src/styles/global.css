@@ -40,17 +40,3 @@
 body{
     font-family: var(--font);
 }
-
-.btn-primary{
-    padding: 14px 32px;
-    border-radius: 4px;
-    background-color: var(--color-primary);
-    color: var(--color-neutral-white);
-    cursor: pointer;
-    transition: 0.5s;
-    margin: 16px;
-}
-
-.btn-primary:hover{
-    background-color: var(--color-shade3);
-}
