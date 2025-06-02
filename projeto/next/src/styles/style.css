@@ -86,12 +86,13 @@ main{
     width: 128px;
 }
 
-section{
+.our-clients{
     display: flex;
     flex-direction: column;
     text-align: center;
     padding: 0 144px;
     gap: 16px;
+    margin-top: 40px;
 }
 
 .our-clients-content{
@@ -125,7 +126,7 @@ section{
     color: var(--color-neutral-white);
     cursor: pointer;
     transition: 0.5s;
-    margin: 16px;
+    margin-top: 16px;
 }
 
 .btn-primary:hover{
@@ -142,6 +143,7 @@ section{
     margin-top: 40px;
     color: var(--color-neutral-dGrey);
     gap: 16px;
+    border: 1px solid blac;
 }
 
 .manage-sistem > h2{
@@ -179,19 +181,339 @@ section{
     border-radius: 8px;
     background-color: #FFFFFF;
     box-shadow: 0px 2px 4px 0px rgba(171, 190, 209, 0.20);
- }
+}
 
- .card > h3{
+.card > h3{
     font-size: 28px;
     font-weight: 700;
     color: var(--color-neutral-dGrey);
     text-align: center;
     margin: 16px;
- }
+}
 
- .card > p{
+.card > p{
     font-size: 14px;
     color: var(--color-neutral-grey);
     text-align: center;
     margin-top: 8px;
- }
+}
+
+.pixelgrade{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 49px;
+    margin-top: 26px;
+}
+
+.pixelgrade > aside{
+    width: 661px;
+}
+
+.pixelgrade > aside > h2{
+    width: 580px;
+    font-size: 36px;
+    color: var(--color-neutral-dGrey);
+    margin-bottom: 16px;
+}
+
+.pixelgrade > aside > p{
+    width: 601px;
+    font-size: 14px;
+    color: var(--color-neutral-grey);
+    margin-bottom: 16px;
+
+}
+
+.business{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 64px 0;
+    margin-top: 48px;
+    gap: 72px;
+    background-color: var(--color-neutral-silver);
+}
+
+.business > aside{
+    width: 540px;
+}
+
+.business > aside > h2{
+    width: 420px;
+    font-size: 36px;
+    color: var(--color-neutral-dGrey);
+}
+
+.business > aside > h2 > span{
+    color: var(--color-primary);
+}
+
+.business > aside > p{
+    color: var(--color-neutral-grey);
+    margin-top: 8px;
+}
+
+.business > .benefits{
+    width: 540px;
+    display: grid;
+    grid-template-columns: 255px 255px;
+    column-gap: 30px;
+    row-gap: 40px;
+}
+
+.business > .benefits > .benefit{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 16px;
+}
+
+.business > .benefits > .benefit > .benefit-description > h3{
+    font-size: 28px;
+    color: var(--color-neutral-dGrey);
+}
+
+.business > .benefits > .benefit > .benefit-description > p{
+    font-size: 16px;
+    color: var(--color-neutral-grey);
+}
+
+.calender{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+    gap: 49.47px;
+}
+
+.calender > .calender-content{
+    width: 661px;
+}
+
+.calender > .calender-content > h2{
+    width: 601px;
+    font-size: 36px;
+    color: var(--color-neutral-dGrey);
+}
+
+.calender > .calender-content > p{
+    width: 601px;
+    font-size: 14;
+    color: var(--color-neutral-grey);
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.customers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-neutral-silver);
+    margin-top: 48px;
+}
+
+.customers > .customer-content{
+    width: 748px;
+    margin: 33px 0 33px 404px;
+}
+
+.customers > .customer-content > .content > p{
+    font-size: 16px;
+    color: var(--color-neutral-grey);
+}
+
+.customers > .customer-content > .content > h3{
+    font-size: 20px;
+    color: var(--color-primary);
+    margin: 16px 0 8px 0;
+}
+
+.customers > .customer-content > .icons{
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.customers > .customer-content > .icons > .customer-icons{
+    width: 493px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 41px;
+}
+
+.customers > .customer-content > .icons > .customer-icons > img{
+    width: 48px;
+    height: 48px;
+}
+
+.customers > .customer-content > .icons > .customer-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.customers > .customer-content > .icons > .customer-link > a{
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--color-primary);
+    margin: 8px;
+}
+
+.marketing{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 48px;
+}
+
+.marketing > h2{
+    font-size: 36px;
+    color: var(--color-neutral-dGrey);
+    margin-bottom: 8px;
+}
+
+.marketing > p{
+    width: 628px;
+    font-size: 16px;
+    color: var(--color-neutral-grey);
+}
+
+.cards-readmore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-top: 16px;
+}
+
+.cards-readmore > .cards-content{
+    width: 317px;
+    margin: 190px 26px 0;
+    padding: 16px;
+    background-color: var(--color-neutral-silver);
+    border-radius: 8px;
+    box-shadow: 0px 4px 5px 0px rgba(33, 36, 39, 0.2);
+}
+
+.cards-readmore > .cards-content > p{
+    text-align: center;
+    font-size: 21px;
+    font-weight: 600;
+    color: var(--color-neutral-grey);
+}
+
+.cards-readmore > .cards-content > .card-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    gap: 8px;
+}
+
+.cards-readmore > .cards-content > .card-link > a{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-primary);
+    text-decoration: 0;
+}
+
+.conclusion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 95px;
+    flex-direction: column;
+    padding: 32px 0;
+    gap: 32px;
+}
+
+.conclusion > h2{
+    width: 887px;
+    text-align: center;
+    font-size: 64px;
+    color: var(--color-neutral-black);
+}
+
+.conclusion > .btn-primary{
+    display: flex;
+    gap: 8px;
+}
+
+.closing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-neutral-black);
+    padding: 64px;
+    gap: 125px;
+}
+
+.closing > .closing-content{
+    width: 325px;
+}
+
+.closing > .closing-content > img{
+    width: 191px;
+    height: 30px;
+    margin-bottom: 40px;
+}
+
+.closing > .closing-content > p{
+    font-size: 14px;
+    color: var(--color-neutral-silver);
+    margin-bottom: 8px;
+}
+
+.closing > .closing-content > .media{
+    margin-top: 32px;
+    width: 176px;
+    display: flex;
+    gap: 16px;
+}
+
+.closing > .closing-down{
+    width: 635px;
+    display: grid;
+    grid-template-columns: 160px 160px 255px;
+    column-gap: 30px;
+}
+
+.closing > .closing-down > .down-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.closing > .closing-down > .down-content > h3{
+    font-size: 20px;
+    color: var(--color-neutral-white);
+    margin-bottom: 24px;
+}
+
+.closing > .closing-down > .down-content > .contact{
+    display: flex;
+    flex-direction: column;
+    gap: 12px
+}
+
+.closing > .closing-down > .down-content > .contact > a{
+    font-size: 14px;
+    color: var(--color-neutral-silver);
+    text-decoration: 0;
+}
+
+.closing > .closing-down > .down-content > input{
+    height: 40px;
+    background-color: var(--color-neutral-lGrey);
+    border-radius: 5px;
+}
+
+input::placeholder{
+    padding-left: 12px;
+    color: var(--color-neutral-white);
+}
