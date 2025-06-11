@@ -1,0 +1,122 @@
+@import url(./globo.css);
+
+header{
+    margin: 30px 52px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > img{
+    width: 185px;
+    height: 41px;
+}
+
+header > .links{
+    width: 430px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+
+}
+
+header > .links > a{
+    font-size: 16px;
+}
+
+header > .icons{
+    width: 247px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+}
+
+main{
+    width: 100%;
+    height: 717px;
+    background-image: url(../assets/images/background.svg);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}   
+
+main > article{
+    width: 643px;
+    padding: 62px 41px 37px 41px;
+    background-color: #FFF3E3;
+    border-radius: 10px;
+    margin-right: 58px;
+}
+
+main > article > p {
+    width: 520px;
+    font-size: 18px;
+}
+
+main > article > p > span{
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+main > article > h1{
+    width: 450px;
+    font-size: 52px;
+    color: var(--color-primary);
+    margin: 4px 0 17px 0;
+}
+
+main > article > button{
+    padding: 24px 78px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    margin-top: 46px;
+}
+
+.browse{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.browse > .range{
+    text-align: center;
+    margin: 57px 0 62px 0;
+}
+
+.browse > .range > h2{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.browse > .range > p{
+    font-size: 20px;
+}
+
+.browse > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.browse > ul > li{
+    width: 381px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.browse > ul > li > a{
+    font-size: 24px;
+    font-weight: 600;
+}
