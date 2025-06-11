@@ -19,7 +19,6 @@ header > .links{
     justify-content: center;
     align-items: center;
     gap: 75px;
-
 }
 
 header > .links > a{
@@ -38,7 +37,6 @@ main{
     width: 100%;
     height: 717px;
     background-image: url(../assets/images/background.svg);
-    /* background-repeat: no-repeat; */
     background-size: cover;
     display: flex;
     justify-content: end;
