@@ -118,3 +118,205 @@ main > article > button{
     font-size: 24px;
     font-weight: 600;
 }
+
+.our-products{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-products > h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 56px 0 36px 0;
+}
+
+.our-products > .our-cards > ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 34px;
+    gap: 34px;
+    list-style: none;
+}
+
+.our-products > .our-cards > ul > li{
+    cursor: pointer;
+    background-color: var(--color-lightBg);
+    position: relative;
+}
+
+.greenAccents{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    
+    left: 69%;
+    top:13px;
+    color: var(--color-white);
+    background-color: var(--color-greenAccents);
+    padding:12px;
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+}
+
+.redAccents{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    
+    left: 69%;
+    top:13px;
+    color: var(--color-white);
+    background-color: var(--color-redAccents);
+    padding:12px;
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+}
+
+.our-products > .our-cards > ul > li > .cards-content{
+    margin: 16px 20px 30px 16px;
+}
+
+.our-products > .our-cards > ul > li > .cards-content > h3{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-gray);
+}
+
+.our-products > .our-cards > ul > li > .cards-content > p{
+    font-size: 16px;
+    color: var(--color-gray3);
+    margin: 8px 0;
+}
+
+.our-products > .our-cards > ul > li > .cards-content > .value{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.our-products > .our-cards > ul > li > .cards-content > .value > h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.our-products > .our-cards > ul > li > .cards-content > .value > p{
+    font-size: 16px;
+    color: var(--color-gray4);
+    text-decoration: line-through;
+}
+
+.our-products > button{
+    margin: 32px 0 69px 0;
+    padding: 12px 78px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    cursor: pointer;
+}
+
+.inspirations{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    border: 2px solid black;
+    gap: 42px;
+}
+
+.inspirations > article{
+    border: 1px solid black;
+}
+
+.inspirations > .cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    gap: 16px;
+}
+
+.share-setup{
+    display: flex;
+    flex-direction:column;
+    position:relative;
+    margin-bottom:750px;
+}
+
+.share-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#estante{
+    display: flex;
+    position: absolute;
+    top:1%;
+}
+
+#notebook-radio{
+    display: flex;
+    position: absolute;
+    top:130%;
+    left:9%;
+}
+
+#dinner-table{
+    display: flex;
+    position: absolute;
+    top:150%;
+    left:41%;
+}
+
+#bed-bedroom{
+    display: flex;
+    position: absolute;
+    top:190%;
+    left:63%;
+}
+
+#tabletop-wall{
+    display: flex;
+    position: absolute;
+    top:50%;
+    left:1274px;
+}
+
+#cadeira-madeira{
+    display: flex;
+    position: absolute;
+    top: 700%;
+}
+
+#nightstand-pot{
+    display: flex;
+    position: absolute;
+    top: 700%;
+    left: 14%;
+}
+
+#portrait-pot{
+    display: flex;
+    position: absolute;
+    top: 800%;
+    left:63%;
+}
+
+#kitchen-wall{
+    display: flex;
+    position: absolute;
+    top: 900%;
+    left:1210px;
+}
