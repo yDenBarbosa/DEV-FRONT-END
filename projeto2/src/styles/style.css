@@ -76,6 +76,7 @@ main > article > button{
     color: var(--color-white);
     background-color: var(--color-primary);
     margin-top: 46px;
+    cursor: pointer;
 }
 
 .browse{
@@ -112,6 +113,11 @@ main > article > button{
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    transition: 0.3s;
+}
+
+.browse > ul > li:hover{
+    transform: scale(1.05);
 }
 
 .browse > ul > li > a{
@@ -145,6 +151,11 @@ main > article > button{
     cursor: pointer;
     background-color: var(--color-lightBg);
     position: relative;
+    transition: 0.3s;
+}
+
+.our-products > .our-cards > ul > li:hover{
+    transform: scale(1.05);
 }
 
 .greenAccents{
@@ -228,95 +239,259 @@ main > article > button{
 
 .inspirations{
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
-    border: 2px solid black;
+    padding: 48px 0 40px 0;
+    background-color: #FCF8F3;
     gap: 42px;
 }
 
 .inspirations > article{
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inspirations > article > h2{
+    width: 422px;
+    align-self: start;
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--color-gray);
+}
+
+.inspirations > article > p{
+    width: 368px;
+    align-self: start;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-gray2);
+    margin: 7px 0 25px 0    ;
+}
+
+.inspirations > article > button{
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    padding: 12px 36px;
+    align-self: start;
+    cursor: pointer;
 }
 
 .inspirations > .cards{
+    width: 794px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    border: 1px solid black;
+    align-items: start;
     gap: 16px;
+    position: relative;
 }
 
-.share-setup{
+.inspirations > .cards > .sala img {
     display: flex;
-    flex-direction:column;
-    position:relative;
-    margin-bottom:750px;
+    align-self: start;
 }
 
-.share-text{
+.inspirations > .cards > .sala > img {
+    display: flex;
+    align-self: start;
+    transition: 0.3s;
+}
+
+.inspirations > .cards > .sala img:hover {
+    transform: scale(1.05);
+}
+
+.inspirations > .cards > .background{
+    display: flex;
+    align-items: end;
+    position: absolute;
+    top: 420px;
+    left: 15px;    
+    z-index: 1;
+}
+
+.inspirations > .cards > .background > button{
+    display: flex;
+    justify-content: center;
+    width: 32px;
+    height: 48px;
+    padding: 8px 12px;
+    background-color: var(--color-primary);
+    cursor: pointer;
+}
+
+.inspirations > .cards > .inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: end;
+    position: absolute;
+    top: 445px;
+    left: 45px;
+    z-index: 2;
+}
+
+.inspirations > .cards > .indicador > button{
+    cursor: pointer;
+}
+
+.inspirations > .cards > .inner > p{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-gray2);
+}
+
+.inspirations > .cards > .inner > h3{
+    width: 111px;
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--color-gray);
+}
+
+.inspirations > .cards > .indicador{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: end;
+    position: absolute;
+    top: 260px;
+    left: 500px;
+    z-index: 3;
+}
+
+.share-setup {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.share-text > p{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-gray2);
+    margin-bottom: 8px;
+}
+
+.share-text h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--color-gray);
+    margin-bottom: 40px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.image-grid > img {
+    width: 100%;
+    height: auto;
+    align-self: center;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.image-grid img:hover {
+    transform: scale(1.05);
+}
+
+#estante {
+    height: 410px;
+}
+#sofa {
+    height: 500px;
+}
+
+#bed-bedroom {
+    height: 200px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding: 61px 100px 43px 100px;
+    border-top: 1px solid var(--color-gray4);
+}
+
+footer > section{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 70px;
+    border-bottom: 1px solid var(--color-gray4);
+}
+
+footer > section > .about{
+    display: flex;
     flex-direction: column;
+    align-self: center;
+    margin-right: 200px;
+}
+footer > section > .about > h3{
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--font-color);
+    margin-bottom: 50px;
 }
 
-#estante{
-    display: flex;
-    position: absolute;
-    top:1%;
+footer > section > .about > .content-about{
+    margin-bottom: 202px;
 }
 
-#notebook-radio{
-    display: flex;
-    position: absolute;
-    top:130%;
-    left:9%;
+footer > section > .about > .content-about > p{
+    font-size: 16px;
+    color: var(--color-gray3);
 }
 
-#dinner-table{
+footer > section > nav{
     display: flex;
-    position: absolute;
-    top:150%;
-    left:41%;
+    flex-direction: column;
+    align-self: start;
 }
 
-#bed-bedroom{
-    display: flex;
-    position: absolute;
-    top:190%;
-    left:63%;
+footer > section > nav > h4{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-gray3);
+    margin-bottom: 55px;
 }
 
-#tabletop-wall{
-    display: flex;
-    position: absolute;
-    top:50%;
-    left:1274px;
+footer > section > nav > a{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--font-color);
+    margin-bottom: 46px;
 }
 
-#cadeira-madeira{
+footer > section > nav > .input{
     display: flex;
-    position: absolute;
-    top: 700%;
+    width: 286px;
+    gap: 11px;
 }
 
-#nightstand-pot{
-    display: flex;
-    position: absolute;
-    top: 700%;
-    left: 14%;
+footer > section > nav > .input > input{
+    width: 200px;
+    border-bottom: 1px solid black;
 }
 
-#portrait-pot{
-    display: flex;
-    position: absolute;
-    top: 800%;
-    left:63%;
+footer > section > nav > .input > button{
+    color: var(--font-color);
+    font-weight: 600;
+    border-bottom: 1px solid black;
+    cursor: pointer;
 }
 
-#kitchen-wall{
+footer > p{
     display: flex;
-    position: absolute;
-    top: 900%;
-    left:1210px;
+    font-size: 16px;
+    font-weight: 500;
+    align-self: self-start;
+    margin: 40px 35px;
 }
