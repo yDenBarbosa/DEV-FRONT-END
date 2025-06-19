@@ -1,0 +1,142 @@
+@import url(./global.css);
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 41px;
+    padding: 16px 0;
+}
+
+header > .log{
+    width: 187px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+}
+
+header > .header-content{
+    display: flex;
+    align-items: center;
+    gap: 233px;
+}
+
+header > .header-content > nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 21px;
+}
+
+header > .header-content > .login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+}
+
+header > .header-content > .login > button{
+    padding: 15px 25px;
+    background: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header > .header-content > .login > button > p{
+    font-weight: bold;
+    background: var(--primary-color);
+}
+
+header > .header-content > .login > button > img{
+    background: var(--primary-color);
+}
+
+.financial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 80px 0;
+}
+
+.financial > .financial-content{
+    width: 518px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+}
+
+.financial > .financial-content > h4{
+    width: 350px;
+}
+
+.financial > .financial-content > .btn-button{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+.financial > .financial-content > .btn-button > button{
+    width: 187px;
+    border-radius: 35px;
+    padding: 15px 36px;
+    background: var(--primary-color);
+}
+
+#transparent{
+    background: var(--dark-background-color);
+    border: 1px solid;
+}
+
+.better{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 69px;
+}
+
+.better > .business{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.better > .business > h2{
+    width: 451px;
+    margin-bottom: 10px;
+}
+
+.better > .business > p{
+    color: var(--second-text-color);
+}
+
+.better > .cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    gap: 30px;
+    list-style: none;
+}
+
+.better > .cards > li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 20px;
+    gap: 20px;
+    border: 1px solid;
+}
+
+.better > .cards > li > .cards-text{
+    width: 213px;                      
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
