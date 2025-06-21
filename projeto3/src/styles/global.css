@@ -9,10 +9,6 @@
     color: var(--light-text-color);
 }
 
-/* @function px-to-rem($px, $base: --font-size-base) {
-    @return ($px / $base) * 1rem;
-} */
-
 :root{
     --font-size-base: 16px;
     --primary-color: #23A6F0;
@@ -31,58 +27,64 @@
     --danger-color: #E74040;
     --light-gray-1: #FAFAFA;
     --light-gray-2: #ECECEC;
+    --borde-primary: #f0f0f0;
+    --input-color: #F5F5F5;
+}
+
+html{
+    font-size: 16px;
 }
 
 h1{
-    font-size: 58px;
+    font-size: 3.63rem;
     font-weight: 800;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.0125rem;
 }
 
 h2{
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 700;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.0125rem;
 }
 
 h3{
-    font-size: 24px;
+    font-size: 1.25rem;
     font-weight: 700;
-    letter-spacing: 0.1px;
+    letter-spacing: 0.00625rem;
 }
 
 h4{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
-    letter-spacing: 0.1px;
+    letter-spacing: 0.00625rem;
 }
 
 h5{
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
-    letter-spacing: 0.1px;
+    letter-spacing: 0.00625rem;
 }
 
 h6{
-    font-size: 14px;
+    font-size: 0.88rem;
     font-weight: 600;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.0125rem;
 }
 
 p{
-    font-size: 14px;
+    font-size: 0.88rem;
     font-weight: 500;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.0125rem;
 }
 
 a{
-    font-size: 14px;
+    font-size: 0.88rem;
     font-weight: 500;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.0125rem;
 }
 
 .btn-text{
-    font-size: 14px;
+    font-size: 0.88rem;
     font-weight: 700;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.0125rem;
 }
