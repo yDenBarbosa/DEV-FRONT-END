@@ -4,13 +4,13 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 41px;
-    padding: 16px 0;
+    gap: 2.56rem;
+    padding: 1rem 0;
 }
 
 header > .log{
-    width: 187px;
-    height: 58px;
+    width: 11.69rem;
+    height: 3.625rem;
     display: flex;
     align-items: center;
 }
@@ -18,31 +18,32 @@ header > .log{
 header > .header-content{
     display: flex;
     align-items: center;
-    gap: 233px;
+    gap: 14.56rem
+;
 }
 
 header > .header-content > nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 21px;
+    gap: 1.31rem;
 }
 
 header > .header-content > .login{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 45px;
+    gap: 1.31rem;
 }
 
 header > .header-content > .login > button{
-    padding: 15px 25px;
+    padding: 0.94rem 1.56rem;
     background: var(--primary-color);
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
-    border-radius: 5px;
+    gap: 0.94rem;
+    border-radius:0.31rem;
     cursor: pointer;
 }
 
@@ -59,39 +60,40 @@ header > .header-content > .login > button > img{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-    padding: 80px 0;
+    gap: 1.88rem;
+    padding: 5.5rem 0;
 }
 
 .financial > .financial-content{
-    width: 518px;
+    width: 32.38rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 35px;
+    gap: 2.19em;
 }
 
 .financial > .financial-content > h4{
-    width: 350px;
+    width: 21.88rem;
 }
 
 .financial > .financial-content > .btn-button{
     display: flex;
     justify-content: start;
     align-items: center;
-    gap: 10px;
+    gap: 0.63rem;
 }
 
 .financial > .financial-content > .btn-button > button{
-    width: 187px;
-    border-radius: 35px;
-    padding: 15px 36px;
+    width: 11.69rem;
+    border-radius: 2.19rem;
+    padding: 0.94rem 2.25rem;
     background: var(--primary-color);
+    cursor: pointer;
 }
 
 #transparent{
     background: var(--dark-background-color);
-    border: 1px solid;
+    border: 0.06rem solid;
 }
 
 .better{
@@ -99,7 +101,8 @@ header > .header-content > .login > button > img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 69px;
+    gap: 4.31rem;
+    margin: 2.44rem 0;
 }
 
 .better > .business{
@@ -109,8 +112,8 @@ header > .header-content > .login > button > img{
 }
 
 .better > .business > h2{
-    width: 451px;
-    margin-bottom: 10px;
+    width: 28.19rem;
+    margin-bottom: 0.63rem;
 }
 
 .better > .business > p{
@@ -120,23 +123,335 @@ header > .header-content > .login > button > img{
 .better > .cards{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 30px;
-    gap: 30px;
+    column-gap: 1.88rem;
+    gap: 1.88rem;
     list-style: none;
 }
 
 .better > .cards > li{
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 35px 20px;
-    gap: 20px;
-    border: 1px solid;
+    align-items: start;
+    padding: 2.16rem 1.25rem;
+    gap: 1.25rem;
+    border: 0.06rem solid;
 }
 
 .better > .cards > li > .cards-text{
-    width: 213px;                      
+    width: 13.31rem;                      
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 0.31rem;
 }
+
+.clients{
+    margin: 7rem 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.clients > .clients-content > h2{
+    margin-bottom: 0.63rem;
+}
+
+.clients > .clients-banner{
+    background-color: var(--light-background-color);
+    padding: 2.5rem 9.69rem;
+    border: 1px solid;
+    border-radius: 0.31rem;
+}
+
+.clients > .clients-banner > img{
+    background-color: var(--light-background-color);
+}
+
+.clients > .clients-banner > .paragrafos{
+    margin: 1.88rem 0 0.94rem 0;
+}
+
+.clients > .clients-banner > .paragrafos > p{
+    background-color: var(--light-background-color);
+    color: var(--second-text-color);
+}
+
+.clients > .clients-banner > h3{
+    background-color: var(--light-background-color);
+    color: var(--text-color);
+    margin: 0.94rem 0 0.5rem;
+}
+
+.clients > .clients-banner > h6{
+    background-color: var(--light-background-color);
+    color: var(--second-text-color);
+}
+
+.our{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+    gap: 3.13rem;
+}
+
+.our > .our-content{
+    text-align: center;
+}
+
+.our > .our-content > h2{
+    margin-bottom: 0.63rem;
+}
+
+.our > ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+    column-gap: 0.63rem;
+}
+
+.our > ul > li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.13rem 1.75rem;
+    gap: 1.56rem;
+    border: 0.06rem solid;
+    border-radius: 0.63rem;
+    cursor: pointer;
+}
+
+.pricing{
+    margin: 10rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+}
+
+.pricing > .pricing-content{
+    text-align: center;
+}
+
+.pricing > .pricing-content > h2{
+    margin-bottom: 0.63rem;
+}
+
+.pricing > .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.88rem;
+}
+
+.pricing > .container > .card-value{
+    width: 31.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.88rem;
+    padding: 3.13rem;
+    border: 0.06rem solid var(--primary-color);
+    border-radius: 0.63rem;
+    background: var(--light-background-color);
+}
+
+.pricing > .container > .card-value > .content{
+    width: 13.56rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.94rem;
+    background: var(--light-background-color);
+}
+
+.pricing > .container > .card-value > .content > h3{
+    background: var(--light-background-color);
+    color: var(--primary-color);
+}
+
+.pricing > .container > .card-value > .content > a{
+    background: var(--light-background-color);
+    color: var(--second-text-color);
+}
+
+.pricing > .container > .card-value > .content > .values{
+    display: flex;
+    gap: 0.63rem;
+    background: var(--light-background-color);
+}
+
+.pricing > .container > .card-value > .content > .values > h2{
+    background: var(--light-background-color);
+    color: var(--primary-color);
+}
+
+.pricing > .container > .card-value > .content > .values > .per{
+    display: flex;
+    flex-direction: column;
+    background: var(--light-background-color);
+}
+
+.pricing > .container > .card-value > .content > .values > .per > h5{
+    background: var(--light-background-color);
+    color: var(--primary-color);
+}
+
+.pricing > .container > .card-value > .content > .values > .per > h6{
+    background: var(--light-background-color);
+    color: var(--primary-color);
+}
+
+.pricing > .container > .card-value > .content > button{
+    padding: 0.94rem 2.50rem;
+    background: var(--primary-color);
+    border-radius: 0.31rem;
+    cursor: pointer;
+}
+
+.branches{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6.25rem 0 29.88rem 0;
+}
+
+.branches > .branches-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9.88rem;
+}
+
+.branches > .branches-content > .content{
+    width: 26.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.94rem;
+}
+
+.appointment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--light-background-color);
+    padding-bottom: 8.5rem;
+}
+
+.appointment > .book{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--light-background-color);
+    margin-top: -20rem;
+}
+
+.appointment > .book > form{
+    padding: 2.5rem 3.13rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.5rem;
+    background: var(--light-background-color);
+}
+
+.appointment > .book > form > h3{
+    height: 2rem;
+    text-align: center;
+    color: var(--text-color);
+    background: var(--light-background-color);
+}
+
+.appointment > .book > form > .data{
+    width: 31.81rem;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    gap: 0.63rem;
+    background: var(--light-background-color);
+}
+
+.appointment > .book > form > .data > .book-content{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    gap: 0.63rem;
+    background: var(--light-background-color);
+}
+
+.appointment > .book > form > .data > .book-content > h6{
+    background: var(--light-background-color);
+    color: var(--text-color);
+    height: 1.5rem;
+}
+.appointment > .book > form > .data > .book-content > input{
+    background: var(--input-color);
+    border: 0.06rem solid var(--borde-primary);
+    border-radius: 0.31rem;
+    height: 3.13rem;
+    padding-left: 1.31rem;
+}
+
+.appointment > .book > form > .data > .book-content > select{
+    background: var(--input-color);
+    color: var(--second-text-color);
+    border: 0.06rem solid var(--borde-primary);
+    border-radius: 0.31rem;
+    height: 3.13rem;
+    padding-left: 1.31rem;
+}
+
+.appointment > .book > form > button{
+    padding: 0.94rem 11.44rem;
+    background: var(--primary-color);
+    border-radius: 0.31rem;
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+
+footer > .finish{
+    width: 58.75rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 5.88rem;
+}
+
+footer > .finish > nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.63rem;
+
+}
+
+footer > .finish > nav > h3{
+    margin-bottom: 0.63rem;
+}
+
+footer > .finish > nav > a{
+    display: flex;
+    align-items: center;
+}
+
+footer > .finish > nav > p{
+    width: 13.1rem;
+    margin-bottom: 0.50rem;
+}
+
+footer > .finish > nav > .social{
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
