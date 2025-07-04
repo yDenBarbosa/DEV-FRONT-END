@@ -139,17 +139,17 @@ if (produto == "E" || produto == 1){
     desconto = 15;
     produto = "Eletônicos";
     valorFinal = preco - preco * (desconto / 100);
-    console.log(`Produto selecionado: ${produto}\nValor do Produto: R$ ${preco}\nDesconto: ${desconto}%\nValor final: ${valorFinal.toFixed(2)}`)
+    console.log(`Produto selecionado: ${produto}\nValor do Produto: R$ ${preco.toFixed}\nDesconto: ${desconto}%\nValor final: ${valorFinal.toFixed(2)}`)
 } else if (produto == "V" || produto == 2){
     desconto = 10;
     produto = "Vestuário";
     valorFinal = preco - preco * (desconto / 100);
-    console.log(`Produto selecionado: ${produto}\nValor do Produto: R$ ${preco}\nDesconto: ${desconto}%\nValor final: ${valorFinal.toFixed(2)}`)
+    console.log(`Produto selecionado: ${produto}\nValor do Produto: R$ ${preco.toFixed}\nDesconto: ${desconto}%\nValor final: ${valorFinal.toFixed(2)}`)
 } else if (produto == "A" || produto == 3){
     desconto = 5;
     produto = "Alimento";
     valorFinal = preco - preco * (desconto / 100);
-    console.log(`Produto selecionado: ${produto}\nValor do Produto: R$ ${preco}\nDesconto: ${desconto}%\nValor final: ${valorFinal.toFixed(2)}`)
+    console.log(`Produto selecionado: ${produto}\nValor do Produto: R$ ${preco.toFixed}\nDesconto: ${desconto}%\nValor final: ${valorFinal.toFixed(2)}`)
 } else {
     console.log("Sem desconte!")
 }
