@@ -24,17 +24,17 @@ if (nota >= 9){
 // Entre 18 e 59 anos: R$ 30
 // A partir de 60 anos: R$ 20
 
-idade = 15
+// idade = 15
 
-if (idade < 12){
-    console.log("R$ 10")
-} else if (idade <= 17){
-    console.log("R$ 15")
-} else if (idade <= 59){
-    console.log("R$ 30")
-} else {
-    console.log("R$ 20")
-}
+// if (idade < 12){
+//     console.log("R$ 10")
+// } else if (idade <= 17){
+//     console.log("R$ 15")
+// } else if (idade <= 59){
+//     console.log("R$ 30")
+// } else {
+//     console.log("R$ 20")
+// }
 
 // Exercício 3 – Verificação de peso para corrida
 // Um atleta vai participar de uma corrida, e o peso define a categoria:
@@ -109,7 +109,7 @@ if (salario <= 1.500){
 // Primavera: Setembro, Outubro, Novembro
 // Se o número não corresponder a um mês válido, exiba "Mês inválido".
 
-let estacao = outubro
+let estacao = "outubro"
 
 if (estacao == "Dezembro" || estacao == "Janeiro" || estacao == "Fevereiro"){
     console.log("Verão")
@@ -131,13 +131,27 @@ if (estacao == "Dezembro" || estacao == "Janeiro" || estacao == "Fevereiro"){
 // Outras Categorias: Sem desconto
 
 let produto = "E"
-let preco = 3.000
+let preco = 3.053
 let desconto = 0
+let valorFinal = 0
 
 if (produto == "E" || produto == 1){
-    desconto = 0.15
-    produto = "Eletônicos"
-    console.log(`Produto selecionado: ${produto}\n Valor do Produto: R$ ${preco}`)
+    desconto = 15;
+    produto = "Eletônicos";
+    valorFinal = preco - preco * (desconto / 100);
+    console.log(`Produto selecionado: ${produto}\nValor do Produto: R$ ${preco}\nDesconto: ${desconto}%\nValor final: ${valorFinal.toFixed(2)}`)
+} else if (produto == "V" || produto == 2){
+    desconto = 10;
+    produto = "Vestuário";
+    valorFinal = preco - preco * (desconto / 100);
+    console.log(`Produto selecionado: ${produto}\nValor do Produto: R$ ${preco}\nDesconto: ${desconto}%\nValor final: ${valorFinal.toFixed(2)}`)
+} else if (produto == "A" || produto == 3){
+    desconto = 5;
+    produto = "Alimento";
+    valorFinal = preco - preco * (desconto / 100);
+    console.log(`Produto selecionado: ${produto}\nValor do Produto: R$ ${preco}\nDesconto: ${desconto}%\nValor final: ${valorFinal.toFixed(2)}`)
+} else {
+    console.log("Sem desconte!")
 }
 
 // Exercício 8 – Validação de Idade para Carteira de Motorista
