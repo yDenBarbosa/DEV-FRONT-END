@@ -122,3 +122,37 @@ if (estacao == "Dezembro" || estacao == "Janeiro" || estacao == "Fevereiro"){
 } else {
     console.log("Mês inválido!")
 }
+
+// Exercício 7 – Desconto de Produto por Categoria
+// Uma loja oferece descontos diferentes para produtos dependendo da sua categoria. Dada a categoria do produto (representada por um número ou texto) e o preço original, calcule e exiba o preço final com o desconto aplicado.
+// Eletrônicos (Categoria 'E' ou 1): 15% de desconto
+// Vestuário (Categoria 'V' ou 2): 10% de desconto
+// Alimentos (Categoria 'A' ou 3): 5% de desconto
+// Outras Categorias: Sem desconto
+
+let produto = "E"
+let preco = 3.000
+let desconto = 0
+
+if (produto == "E" || produto == 1){
+    desconto = 0.15
+    produto = "Eletônicos"
+    console.log(`Produto selecionado: ${produto}\n Valor do Produto: R$ ${preco}`)
+}
+
+// Exercício 8 – Validação de Idade para Carteira de Motorista
+// Em um país fictício, as regras para obter a carteira de motorista são as seguintes:
+// Menos de 16 anos: "Não elegível para carteira de motorista."
+// Entre 16 e 17 anos: "Elegível para carteira provisória."
+// A partir de 18 anos: "Elegível para carteira completa."
+// Exiba a mensagem correspondente à elegibilidade de uma pessoa para a carteira de motorista, dada sua idade.
+
+let idade = 20 
+
+if (idade < 16){
+    console.log("Não elegível para carteira de motorista")
+} else if (idade <= 17){
+    console.log("Elegível para carteira provisória")
+} else {
+    console.log("Elegível para carteira completa")
+}
