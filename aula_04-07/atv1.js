@@ -89,7 +89,7 @@ if (diaSemana == 1){
 // De R$ 3.001 até R$ 5.000 → 15%
 // Acima de R$ 5.000 → 20%
 
-let salario = 4.500
+let salario = 3.001
 
 if (salario <= 1.500){
     console.log("Isento!")
@@ -99,4 +99,26 @@ if (salario <= 1.500){
     console.log("Imposto de 15%")
 } else {
     console.log("Imposto de 20%")
+}
+
+// Exercício 6 – Determinação de Estação do Ano
+// Dado um mês (representado por um número de 1 a 12), exiba a estação do ano correspondente no hemisfério sul. Considere as seguintes datas aproximadas de início:
+// Verão: Dezembro, Janeiro, Fevereiro
+// Outono: Março, Abril, Maio
+// Inverno: Junho, Julho, Agosto
+// Primavera: Setembro, Outubro, Novembro
+// Se o número não corresponder a um mês válido, exiba "Mês inválido".
+
+let estacao = outubro
+
+if (estacao == "Dezembro" || estacao == "Janeiro" || estacao == "Fevereiro"){
+    console.log("Verão")
+} else if (estacao == "Março" || estacao == "Abril" || estacao == "Maio"){
+    console.log("Outono")
+} else if (estacao == "Junho" || estacao == "Julho" || estacao == "Agosto"){
+    console.log("Inverno")
+} else if (estacao == "Setembro" || estacao == "Outubro" || estacao == "Novembro" ){
+    console.log("Primavera")
+} else {
+    console.log("Mês inválido!")
 }
