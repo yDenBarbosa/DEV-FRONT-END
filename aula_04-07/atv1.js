@@ -24,17 +24,17 @@ if (nota >= 9){
 // Entre 18 e 59 anos: R$ 30
 // A partir de 60 anos: R$ 20
 
-// idade = 15
+idade = 15
 
-// if (idade < 12){
-//     console.log("R$ 10")
-// } else if (idade <= 17){
-//     console.log("R$ 15")
-// } else if (idade <= 59){
-//     console.log("R$ 30")
-// } else {
-//     console.log("R$ 20")
-// }
+if (idade < 12){
+    console.log("R$ 10")
+} else if (idade <= 17){
+    console.log("R$ 15")
+} else if (idade <= 59){
+    console.log("R$ 30")
+} else {
+    console.log("R$ 20")
+}
 
 // Exercício 3 – Verificação de peso para corrida
 // Um atleta vai participar de uma corrida, e o peso define a categoria:
@@ -139,17 +139,17 @@ if (produto == "E" || produto == 1){
     desconto = 15;
     produto = "Eletônicos";
     valorFinal = preco - preco * (desconto / 100);
-    console.log(`Produto selecionado: ${produto}\nValor do Produto: R$ ${preco.toFixed}\nDesconto: ${desconto}%\nValor final: ${valorFinal.toFixed(2)}`)
+    console.log(`Produto selecionado: ${produto}\nValor do Produto: R$ ${preco.toFixed(2)}\nDesconto: ${desconto}%\nValor final: ${valorFinal.toFixed(2)}`)
 } else if (produto == "V" || produto == 2){
     desconto = 10;
     produto = "Vestuário";
     valorFinal = preco - preco * (desconto / 100);
-    console.log(`Produto selecionado: ${produto}\nValor do Produto: R$ ${preco.toFixed}\nDesconto: ${desconto}%\nValor final: ${valorFinal.toFixed(2)}`)
+    console.log(`Produto selecionado: ${produto}\nValor do Produto: R$ ${preco.toFixed(2)}\nDesconto: ${desconto}%\nValor final: ${valorFinal.toFixed(2)}`)
 } else if (produto == "A" || produto == 3){
     desconto = 5;
     produto = "Alimento";
     valorFinal = preco - preco * (desconto / 100);
-    console.log(`Produto selecionado: ${produto}\nValor do Produto: R$ ${preco.toFixed}\nDesconto: ${desconto}%\nValor final: ${valorFinal.toFixed(2)}`)
+    console.log(`Produto selecionado: ${produto}\nValor do Produto: R$ ${preco.toFixed(2)}\nDesconto: ${desconto}%\nValor final: ${valorFinal.toFixed(2)}`)
 } else {
     console.log("Sem desconte!")
 }
@@ -161,12 +161,78 @@ if (produto == "E" || produto == 1){
 // A partir de 18 anos: "Elegível para carteira completa."
 // Exiba a mensagem correspondente à elegibilidade de uma pessoa para a carteira de motorista, dada sua idade.
 
-let idade = 20 
+let idade1 = 20 
 
-if (idade < 16){
+if (idade1 < 16){
     console.log("Não elegível para carteira de motorista")
-} else if (idade <= 17){
+} else if (idade1 <= 17){
     console.log("Elegível para carteira provisória")
 } else {
     console.log("Elegível para carteira completa")
+}
+
+// Exercício 9 – Classificação de IMC (Índice de Massa Corporal)
+// O Índice de Massa Corporal (IMC) é uma medida internacional usada para calcular se uma pessoa está com o peso ideal. Dada a altura (em metros) e o peso (em quilogramas) de uma pessoa, calcule o IMC e exiba a sua classificação de acordo com a tabela abaixo:
+// Fórmula do IMC: IMC=peso/(altura∗altura)
+// Classificações:
+// Menor que 18.5: Abaixo do peso
+// Entre 18.5 e 24.9: Peso normal
+// Entre 25.0 e 29.9: Sobrepeso
+// Entre 30.0 e 34.9: Obesidade Grau 1
+// Entre 35.0 e 39.9: Obesidade Grau 2 (severa)
+// Acima de 40.0: Obesidade Grau 3 (mórbida)
+
+let altura = 1.90
+let pesoo = 120
+let imc = pesoo / (altura * altura)
+
+if (imc < 18.5){
+    console.log("Abaixo do peso")
+} else if (imc <= 24.9){
+    console.log("Peso normal")
+} else if (imc <= 29.9){
+    console.log("Sobrepeso")
+} else if (imc <= 34.9){
+    console.log("Obesidade Grau 1")
+} else if (imc <= 39.9){
+    console.log("Obesidade Grau 2")
+} else {
+    console.log("Obesidade Grau 3")
+}
+
+// Exercício 10 – Sistema de Pontuação de Jogo
+// Em um jogo, a pontuação final de um jogador é calculada com base nos pontos que ele fez e em um multiplicador de bônus, que depende da dificuldade do nível em que ele jogou. Calcule a pontuação final do jogador e exiba uma mensagem de congratulação baseada em sua performance.
+// Dados de entrada:
+// pontosBase: Pontos brutos que o jogador fez (número inteiro).
+// nivelDificuldade: Representa a dificuldade do nível ('F' para Fácil, 'M' para Médio, 'D' para Difícil).
+// Regras do multiplicador de bônus:
+// Fácil ('F'): Multiplicador de 1.2
+// Médio ('M'): Multiplicador de 1.5
+// Difícil ('D'): Multiplicador de 2.0
+// Qualquer outra entrada: Multiplicador padrão de 1.0 (sem bônus)
+// Mensagens de congratulação (baseadas na pontuacaoFinal):
+// Menor que 100: "Quase lá! Tente novamente para uma pontuação maior."
+// Entre 100 e 500: "Bom trabalho! Você está no caminho certo."
+// Acima de 500: "Parabéns! Você é um mestre no jogo!"
+
+let pontosBase = 356
+let nivelDificuldade = "D"
+let pontuacaoFinal = 0
+
+if (nivelDificuldade == "F"){
+    pontuacaoFinal = pontosBase * 1.2
+} else if (nivelDificuldade == "M"){
+    pontuacaoFinal = pontosBase * 1.5
+} else if (nivelDificuldade == "D"){
+    pontuacaoFinal = pontosBase * 2.0
+} else {
+    pontuacaoFinal = pontosBase * 1.0
+}
+
+if (pontuacaoFinal < 100){
+    console.log("Quase lá! Tente novamente para uma pontuação maior")
+} else if (pontuacaoFinal <= 500){
+    console.log("Bom trabalho! Você está no caminho certo")
+} else {
+    console.log("Parabéns! Você é um mestre no jogo")
 }
