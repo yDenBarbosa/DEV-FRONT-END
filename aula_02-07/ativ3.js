@@ -196,3 +196,82 @@ if (idade < 16){
 } else {
     console.log("Voto obrigatório")
 }
+
+// Exercício 13 – Classificação de Triângulos
+// Crie três variáveis: ladoA, ladoB, ladoC (números que representam os lados de um triângulo).
+// Primeiro, verifique se os valores podem formar um triângulo (a soma de dois lados deve ser maior que o terceiro lado). Se não puder, exiba "Não é um triângulo válido".
+// Se for um triângulo válido:
+// Se todos os lados forem iguais, exiba "Triângulo Equilátero".
+// Se dois lados forem iguais, exiba "Triângulo Isósceles".
+// Se todos os lados forem diferentes, exiba "Triângulo Escaleno".
+
+let ladoA = 1
+let ladoB = 5
+let ladoC = 4
+
+if (ladoA + ladoB <= ladoC || ladoA + ladoC <= ladoB || ladoB + ladoC <= ladoA){
+    console.log("Não é um triângulo válido")
+} else if (ladoA == ladoB && ladoA == ladoC){
+    console.log("Triângulo Equilátero")
+} else if (ladoA == ladoB || ladoA == ladoC || ladoB == ladoC){
+    console.log("Triângulo Isósceles")
+} else {
+    console.log("Triângulo Escaleno")
+}
+
+// Exercício 14 – Sistema de Login Completo
+// Crie três variáveis: usuarioDigitado (string), senhaDigitada (string) e usuarioBloqueado (booleano).
+// Considere que o usuário e senha corretos são "admin" e "admin123".
+// Se usuarioBloqueado for True, exiba "Sua conta está bloqueada".
+// Caso contrário:
+// Se usuarioDigiado for igual a "admin" e senhaDigitada for igual a "admin123", exiba "Login bem-sucedido!".
+// Caso contrário, exiba "Usuário ou senha incorretos".
+
+let usuarioDigiado = "admin"
+let senhaDigitada = "admin123"
+let usuarioBloqueado = false
+
+if (usuarioBloqueado == true){
+    console.log("Sua conta está bloqueada!")
+} else if (usuarioDigiado == "admin" && senhaDigitada == "admin123"){
+    console.log("Login bem-sucedido!")
+} else {
+    console.log("Usuário ou senha incorretos.")
+}
+
+// Exercício 15 – Desconto Progressivo
+// Crie duas variáveis: quantidadeItens (número) e precoUnitario (número).
+// Calcule o valorTotal (quantidadeItens * precoUnitario).
+// Aplique os seguintes descontos:
+// Se quantidadeItens for menor que 5, sem desconto.
+// Se quantidadeItens estiver entre 5 e 9 (inclusive), 5% de desconto.
+// Se quantidadeItens for 10 ou mais, 10% de desconto.
+// Exiba o valorTotal com o desconto aplicado.
+
+let quantidadeItens = 11
+let precoUnitario = 55
+let valorTotal = precoUnitario * quantidadeItens
+
+if (quantidadeItens < 5){
+    console.log("Sem desconto!")
+} else if (quantidadeItens <= 9){
+    valorTotal = valorTotal - valorTotal * (5/100)
+    console.log(`Valor total com desconto de 5%: ${valorTotal.toFixed(2)}`)
+} else {
+    valorTotal = valorTotal - valorTotal * (10/100)
+    console.log(`Valor total com desconto de 10%: ${valorTotal.toFixed(2)}`)
+}
+
+// Exercício 16 – Verificação de Ano Bissexto
+// Crie uma variável ano.
+// Um ano é bissexto se for divisível por 400.
+// Ou se for divisível por 4 E não for divisível por 100.
+// Exiba "Ano bissexto" ou "Não é ano bissexto".
+
+let ano = 2024
+
+if (ano % 400 == 0 || ano % 4 == 0 && ano % 100 != 0){
+    console.log("Ano bissexto")
+} else {
+    console.log("Não é ano bissexto")
+}
