@@ -26,6 +26,8 @@ tituloSegundo.style.color = "blue"
 tituloSegundo.style.fontSize = "90px"
 tituloSegundo.style.backgroundColor = "green"
 tituloSegundo.style.border = "2px dashed white"
+
+document.body.style.backgroundColor = "orange"
 // console.log(tituloSegundo)
 
 // let lista = document.getElementById("lista")
